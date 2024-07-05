@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   postgres:
     image: "postgres"
@@ -9,7 +11,20 @@ services:
       POSTGRES_PASSWORD: 0e6VfE2Mr2g1
     ports:
       - "5432:5432"
+  
   app:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
+
     ports:
       - "5000:5000"
+    depends_on:
+      - postgres
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: .
+    restart: always
+    
