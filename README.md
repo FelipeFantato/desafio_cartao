@@ -18,7 +18,7 @@ docker compose up
 ```
   Utilize o login:hyperativa
             senha:2Mr2g1
-  Para se conectar a API.
+  Para se conectar a API.(ponto de melhoria, colocar end-point de cadastrar novos usuários)
 
 - Realizar login em /login, retorna chave JWT 
 - Ao utilizar /upload, é possível cadastrar uma lista de itens, passando o token(JWT) na Query;
