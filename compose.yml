@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: "postgres"
+    volumes:
+      - ./creates.sh:/creates.sh
+    environment:
+      POSTGRES_DB: hyperativadb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 0e6VfE2Mr2g1
+    ports:
+      - "5432:5432"
+  app:
+    build: .
+    ports:
+      - "5000:5000"
