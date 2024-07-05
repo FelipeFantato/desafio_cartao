@@ -15,5 +15,10 @@ Para rodar este projeto, você precisará ter o Docker e o Docker Compose instal
 ```bash
 docker build -t desafiohyperativa-app .
 docker compose up
+```
+  Utilize o login:hyperativa
+            senha:2Mr2g1
+  Para se conectar a API.
 
-
+- Realizar login em /login, retorna chave JWT 
+- Ao utilizar /upload, é possível cadastrar uma lista de itens, passando o token(JWT) na Query;
