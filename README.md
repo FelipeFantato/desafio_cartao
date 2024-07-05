@@ -22,3 +22,4 @@ docker compose up
 
 - Realizar login em /login, retorna chave JWT 
 - Ao utilizar /upload, é possível cadastrar uma lista de itens, passando o token(JWT) na Query;
+- Ao utilizar /cadastrar, com o token, e enviar apenas o texto do número do cartão é possível cadastrar o item.
